@@ -17,7 +17,7 @@ echo "...done"
 
 echo
 
-echo "Reoving completion script from ~/.bash_completion.d"
+echo "Removing completion script from ~/.bash_completion.d"
 rm ~/.bash_completion.d/helpme_complete.sh
 echo "...done"
 
@@ -28,6 +28,7 @@ echo    # (optional) move to a new line
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
     echo "OK, keeping them"
+    echo
     echo "Uninstalled"
     exit 0
 fi
